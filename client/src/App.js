@@ -1,10 +1,12 @@
 import './App.css';
+import SignUp from './components/SignUp';
+const { Routes, Route  } = require('react-router-dom')
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <Routes>
+      <Route path='/signup' element = { <SignUp /> } />
+    </Routes>
   );
 }
 
